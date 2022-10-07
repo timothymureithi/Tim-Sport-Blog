@@ -1,13 +1,17 @@
 # Tim's Sport's Blog
 > Feel free to test it out. 
-> Live demo [_here_](https://www.example.com). 
+> Live demo [_here_](). 
 
 ## Table of Contents
 * [Project Details](#project-details)
 * [Technologies Used](#technologies-used)
-* [Features](#features)
 * [Screenshots](#screenshots)
-* [Room for Improvement](#room-for-improvement)
+* [Room For Improvement](#room-for-improvement)
+* [Future Implementation](#future-implementation)
+* [Steps to use this project after cloning](#steps-to-use-this-project-after-cloning)
+* [Insiprations for this project](#steps-to-use-this-project-after-cloning)
+* [Contact](#contact)
+
 
 ## Project Details
 A simple sport's blog featuring top football leagues in Africa, Europe and The Americas. Relies on JSON server for the handling of storing data. Emulates CRUD functionalities.
@@ -20,7 +24,7 @@ A simple sport's blog featuring top football leagues in Africa, Europe and The A
 - JSON server
 
 ## Screenshots
--
+
 
 ## Room for Improvement
 - I need more practice on implementing MDB UI kit 

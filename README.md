@@ -25,8 +25,9 @@ A simple sport's blog featuring top football leagues in Africa, Europe and The A
 
 ## Screenshots
 ![alt text](https://raw.githubusercontent.com/timothymureithi/Tim-Sport-Blog/main/public/images/Screenshot%20from%202022-10-07%2010-27-30.png)
-
-
+![Screenshot](https://raw.githubusercontent.com/timothymureithi/Tim-Sport-Blog/main/public/images/Screenshot%20from%202022-10-07%2010-27-54.png)
+![ScreenShot](https://raw.githubusercontent.com/timothymureithi/Tim-Sport-Blog/main/public/images/Screenshot%20from%202022-10-07%2010-28-09.png)
+![ScreenShot](https://raw.githubusercontent.com/timothymureithi/Tim-Sport-Blog/main/public/images/Screenshot%20from%202022-10-07%2010-28-39.png)
 ## Room for Improvement
 - I need more practice on implementing MDB UI kit 
 - Cards alignment

@@ -24,7 +24,7 @@ A simple sport's blog featuring top football leagues in Africa, Europe and The A
 - JSON server
 
 ## Screenshots
-![alt text](https://drive.google.com/file/d/1gHE6330yCDpfu7G1kf3Y7hI5g77EsOBW/view?usp=sharing)
+![alt text](https://raw.githubusercontent.com/timothymureithi/Tim-Sport-Blog/main/public/images/Screenshot%20from%202022-10-07%2010-27-30.png)
 
 
 ## Room for Improvement

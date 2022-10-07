@@ -1,6 +1,6 @@
 # Tim's Sport's Blog
 > Feel free to test it out. 
-> Live demo [_here_](). 
+> Live demo [_here_](https://timothymureithi.github.io/Tim-Sport-Blog/). 
 
 ## Table of Contents
 * [Project Details](#project-details)

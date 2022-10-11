@@ -35,7 +35,7 @@ function AddBlogPost() {
 
     //fetch single blog based on id
     const getSingleBlog = async (id) => {
-        const singleBlog = await axios.get(`http://localhost:8000/blogs/${id}`);
+        const singleBlog = await axios.get(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs/${id}`);
         if(singleBlog.status === 200) {
             setFormValue({ ...singleBlog.data });
         }else {
@@ -67,7 +67,7 @@ function AddBlogPost() {
             const currentDate = getDate();
             if(!editMode ){
                 const updateBlogData = {...formValue, date: currentDate};
-                const response = await axios.post("http://localhost:8000/blogs", 
+                const response = await axios.post("https://my-json-server.typicode.com/timothymureithi/db.json", 
                 updateBlogData 
                 );
                 if(response.status === 201) {
@@ -77,7 +77,7 @@ function AddBlogPost() {
                 }
     
             } else {
-                const response = await axios.put(`http://localhost:8000/blogs/${id}`, 
+                const response = await axios.put(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs/${id}`, 
                 formValue
                 );
                 if(response.status === 200) {

@@ -25,10 +25,10 @@ function Home() {
     }, [])
 
     const loadBlogData = async (start, end, increase, operation) => {
-        const blogMax = await axios.get('http://localhost:8000/blogs');
+        const blogMax = await axios.get('https://my-json-server.typicode.com/timothymureithi/db.json/blogs');
         setTotalBlog(blogMax.data.length);
         
-        const response = await axios.get(`http://localhost:8000/blogs?_start=${start}&_end=${end}`);
+        const response = await axios.get(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs?_start=${start}&_end=${end}`);
         if(response.status === 200) {
             setData(response.data);
             if(operation) {
@@ -54,11 +54,11 @@ function Home() {
     
     //Function to fetch the last 3 blogs that will be displayed 
     const fetchLatestBlog = async () =>{
-        const blogMax = await axios.get('http://localhost:8000/blogs');
+        const blogMax = await axios.get('https://my-json-server.typicode.com/timothymureithi/db.json/blogs');
         const start = blogMax.data.length - 3;
         const end = blogMax.data.length;
 
-        const response = await axios.get(`http://localhost:8000/blogs?_start=${start}&_end=${end}`);
+        const response = await axios.get(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs?_start=${start}&_end=${end}`);
         if(response.status === 200) {
             setLatestBlog(response.data);
         }else{
@@ -71,7 +71,7 @@ function Home() {
     const handleDelete = async (id) => {
         if (window.confirm("Are you sure you want to proceeed to delete this blog?")) 
         {
-            const response = await axios.delete(`http://localhost:8000/blogs/${id}`);
+            const response = await axios.delete(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs/${id}`);
             if (response.status === 200) {
                 toast.success("Deleted Successfully");
                 loadBlogData(0, 5, 0, "delete");
@@ -95,7 +95,7 @@ function Home() {
     //request from json to fetch searched data
     const handleSearch = async (event) =>{
         event.preventDefault();
-        const response = await axios.get(`http://localhost:8000/blogs/?q=${search}`);
+        const response = await axios.get(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs/?q=${search}`);
         if(response.status === 200){
             setData(response.data)
         }else{
@@ -105,7 +105,7 @@ function Home() {
 
     //League sidebar function
     const handleCategory = async (category) => {
-        const response = await axios.get(`http://localhost:8000/blogs?category=${category}`);
+        const response = await axios.get(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs?category=${category}`);
         if(response.status === 200) {
             setData(response.data)
         }else {

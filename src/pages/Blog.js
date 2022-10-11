@@ -21,8 +21,8 @@ function Blog() {
 
     //create function to get single blog via api request and also related posts 
     const getSingleBlog = async () => {
-        const response = await axios.get(`http://localhost:8000/blogs/${id}`);
-        const relatedPostsData = await axios.get(`http://localhost:8000/blogs/?category=${response.data.category}&_start=0&_end=3`
+        const response = await axios.get(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs/${id}`);
+        const relatedPostsData = await axios.get(`https://my-json-server.typicode.com/timothymureithi/db.json/blogs/?category=${response.data.category}&_start=0&_end=3`
         );
         setRelatedPosts(relatedPostsData.data);
         if(response.status === 200 || relatedPostsData.status === 200){
